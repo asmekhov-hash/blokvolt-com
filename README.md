@@ -1,20 +1,17 @@
 # blokvolt.com
 
-Regional English-language hub for BlokVolt — home EV charging for apartment-building
-residents. Static site, no build step, served by GitHub Pages on the apex domain.
+Coverage site for BlokVolt — English, static, served by GitHub Pages on the apex domain.
+Its job is to answer one question for a visitor: **do we already work where you park?**
+Serbia hands over to the Serbian product site; every other market is an honest "not yet".
 
-- The Serbian product site is separate and lives on Webflow at https://www.blokvolt.rs
-- This site: brand presence outside Serbia, country routing, SEO, and the
-  procurement page used in supplier outreach (`/partners/`).
+- Serbian product site (Webflow): https://www.blokvolt.rs
+- Palette and type follow the live .rs system: night #0B0F17, volt #D9F45B, porcelain #F2F1EC, Onest.
 
 ## Structure
 
-    index.html                     home + country picker
-    serbia/                        service is live -> hands over to blokvolt.rs
-    montenegro/ ...                markets not open yet, honest interest pages
-    partners/                      wallbox manufacturers, distributors, installers
+    index.html                     hero + coverage + how it works + what you get
+    serbia/                        we work here -> blokvolt.rs
+    montenegro/ ...                not yet — honest pages that collect interest
+    partners/                      hardware suppliers (linked from the footer only)
     assets/                        mark + favicon
     CNAME                          blokvolt.com
-
-Editing is plain HTML; pages are generated from one template so the shell stays
-identical across them.
