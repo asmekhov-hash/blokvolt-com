@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BlokVolt — home EV charging for apartment buildings in Serbia and the Balkans</title>
+<meta name="description" content="BlokVolt installs home EV charging in apartment buildings: charging line or 11 kW wallbox, certified MID sub-meter, building-assembly paperwork and monthly billing. Live in Serbia, expanding across the region.">
+<link rel="canonical" href="https://blokvolt.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BlokVolt">
+<meta property="og:title" content="BlokVolt — home EV charging for apartment buildings in Serbia and the Balkans">
+<meta property="og:description" content="BlokVolt installs home EV charging in apartment buildings: charging line or 11 kW wallbox, certified MID sub-meter, building-assembly paperwork and monthly billing. Live in Serbia, expanding across the region.">
+<meta property="og:url" content="https://blokvolt.com/">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0F131C">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&display=swap">
+<link rel="alternate" hreflang="en" href="https://blokvolt.com/"><link rel="alternate" hreflang="sr-RS" href="https://www.blokvolt.rs/">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --night:#0F131C; --n800:#151B26; --n700:#1C2532; --nline:rgba(255,255,255,.10);
+  --amber:#FFB84A; --amber-h:#F0A63C; --glow:rgba(255,184,74,.28);
+  --bg:#F7F5F2; --card:#FFFFFF; --tint:#EFECE7; --line:#E8E5DF; --line-s:#DBD6CD;
+  --ink:#0F131C; --ink2:#4A5264; --ok:#16794C;
+  --r:14px; --r-s:8px; --r-l:20px;
+  --w:1120px;
+}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Onest,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;font-weight:400;
+  -webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+.night{background:var(--night);color:#fff}
+.night a{color:#fff}
+h1,h2,h3{line-height:1.15;margin:0;letter-spacing:-.02em;font-weight:700}
+h1{font-size:clamp(34px,5.2vw,58px);font-weight:800;letter-spacing:-.03em}
+h2{font-size:clamp(26px,3.4vw,38px);font-weight:700}
+h3{font-size:19px;font-weight:700;letter-spacing:-.01em}
+p{margin:0}
+.lede{font-size:clamp(17px,2vw,20px);line-height:1.55;font-weight:300}
+.muted{color:var(--ink2)}
+.night .muted{color:rgba(255,255,255,.62)}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:13px;letter-spacing:.08em;
+  text-transform:uppercase;font-weight:600;color:var(--amber)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 4px var(--glow)}
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(15,19,28,.86);
+  backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--nline)}
+.hd{display:flex;align-items:center;gap:20px;height:68px}
+.logo{display:flex;align-items:center;text-decoration:none;flex:0 0 auto}
+.logo img{height:22px;width:auto;display:block}
+.logo .fb{color:#fff;font-size:21px;letter-spacing:-.02em}
+.logo .fb b{font-weight:800}.logo .fb i{font-weight:300;font-style:normal}
+nav{display:flex;gap:22px;margin-left:auto;align-items:center}
+nav a{color:rgba(255,255,255,.78);text-decoration:none;font-size:15px;font-weight:500;white-space:nowrap}
+nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;
+  border:1px solid transparent;transition:.15s ease;cursor:pointer;white-space:nowrap}
+.btn-a{background:var(--amber);color:#0F131C}
+.btn-a:hover{background:var(--amber-h)}
+.btn-g{border-color:rgba(255,255,255,.24);color:#fff}
+.btn-g:hover{border-color:#fff}
+.btn-d{border-color:var(--line-s);color:var(--ink);background:#fff}
+.btn-d:hover{border-color:var(--ink)}
+.btn-lg{padding:15px 28px;font-size:16px}
+@media(max-width:820px){nav .hide-s{display:none}}
+@media(max-width:560px){nav .hide-xs{display:none}.hd{gap:12px}.btn{padding:11px 18px;font-size:14px}}
+@media(max-width:700px){.hero{padding:52px 0 56px}section{padding:56px 0}.band{padding:26px}
+  .fbot{flex-direction:column;gap:8px}.pick{padding:48px 0 56px}}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:84px 0 76px}
+.hero::before{content:"";position:absolute;inset:-40% 20% auto -10%;height:560px;
+  background:radial-gradient(50% 50% at 30% 50%,rgba(255,184,74,.16),transparent 70%);pointer-events:none}
+.hero .wrap{position:relative}
+.hero h1{margin:18px 0 0;max-width:16ch}
+.hero .lede{margin-top:22px;max-width:60ch;color:rgba(255,255,255,.76)}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+/* region picker */
+.pick{padding:64px 0 76px}
+.pick h2{max-width:22ch}
+.grid-c{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+@media(max-width:860px){.grid-c{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid-c{grid-template-columns:1fr}}
+.cc{display:flex;flex-direction:column;gap:6px;padding:20px 22px;border-radius:var(--r);
+  background:var(--card);border:1px solid var(--line);text-decoration:none;transition:.15s ease}
+.cc:hover{border-color:var(--line-s);transform:translateY(-2px);box-shadow:0 8px 24px rgba(15,19,28,.06)}
+.cc,.night .cc{color:var(--ink)}
+.night .cc .s{color:var(--ink2)}
+.cc .n{font-weight:700;font-size:18px;display:flex;align-items:center;gap:9px}
+.cc .s{font-size:14px;color:var(--ink2)}
+.tag{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 9px;border-radius:999px;border:1px solid var(--line-s);color:var(--ink2)}
+.tag-live{background:rgba(22,121,76,.10);border-color:rgba(22,121,76,.28);color:var(--ok)}
+/* generic sections */
+section{padding:76px 0}
+.sec-h{max-width:64ch}
+.sec-h p{margin-top:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr}}
+.card{padding:26px;border-radius:var(--r);background:var(--card);border:1px solid var(--line)}
+.night .card{background:var(--n800);border-color:var(--nline)}
+.card h3{margin-bottom:10px}
+.card p{font-size:15.5px}
+.num{font-family:Onest;font-size:15px;font-weight:800;color:var(--amber);letter-spacing:.02em}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+@media(max-width:860px){.stats{grid-template-columns:repeat(2,1fr)}}
+.st{padding:22px;border-radius:var(--r);background:var(--n800);border:1px solid var(--nline)}
+.st b{display:block;font-size:30px;font-weight:800;letter-spacing:-.02em;color:var(--amber);line-height:1.1}
+.st span{display:block;margin-top:8px;font-size:14px;color:rgba(255,255,255,.66)}
+/* list */
+ul.ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}
+ul.ticks li{position:relative;padding-left:30px;font-size:16px}
+ul.ticks li::before{content:"";position:absolute;left:4px;top:10px;width:8px;height:8px;
+  border-radius:2px;background:var(--amber)}
+/* cta band */
+.band{background:var(--n800);border:1px solid var(--nline);border-radius:var(--r-l);
+  padding:40px;display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.band h2{max-width:20ch}
+/* footer */
+footer{background:var(--night);color:#fff;padding:56px 0 34px;border-top:1px solid var(--nline)}
+.fgrid{display:flex;gap:40px;justify-content:space-between;flex-wrap:wrap}
+.fcol h4{margin:0 0 12px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+  color:rgba(255,255,255,.5);font-weight:600}
+.fcol a{display:block;color:rgba(255,255,255,.8);text-decoration:none;font-size:15px;margin-bottom:8px}
+.fcol a:hover{color:#fff}
+.fbot{margin-top:40px;padding-top:22px;border-top:1px solid var(--nline);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:13.5px;color:rgba(255,255,255,.5)}
+footer .muted{color:rgba(255,255,255,.62)}
+.crumb{font-size:14px;color:var(--ink2);margin-bottom:14px}
+.crumb a{color:var(--ink2)}
+.prose p+p{margin-top:16px}
+.prose{max-width:68ch}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="/" aria-label="BlokVolt — home">
+      <img src="https://s3.amazonaws.com/webflow-prod-assets/6a6023f6def4d994c98eff89/6a6280c7ea4a72ff207bc716_blokvolt-primary-white.svg" alt="BlokVolt" width="96" height="22" decoding="async"
+           onerror="this.outerHTML='&lt;span class=&quot;fb&quot;&gt;&lt;i&gt;blok&lt;/i&gt;&lt;b&gt;volt&lt;/b&gt;&lt;/span&gt;'">
+    </a>
+    <nav>
+      <a class="hide-s" href="/#service">What we do</a>
+      <a class="hide-s" href="/#coverage">Coverage</a>
+      <a class="hide-xs" href="/partners/">For manufacturers</a>
+      <a class="btn btn-g" href="https://www.blokvolt.rs" rel="noopener">Serbia&nbsp;·&nbsp;.rs</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="night">
+  <div class="hero"><div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>Serbia first · the region next</span>
+    <h1>Charging where the car already sleeps.</h1>
+    <p class="lede">BlokVolt puts home EV charging into apartment buildings — a safe line or an 11 kW wallbox in the garage or parking space, a certified sub-meter so every kilowatt-hour is accounted for, the building paperwork done in advance, and someone still answering the phone a year later.</p>
+    <div class="hero-cta">
+      <a class="btn btn-a btn-lg" href="#coverage">Where do you need charging?</a>
+      <a class="btn btn-g btn-lg" href="/partners/">For manufacturers &amp; distributors</a>
+    </div>
+  </div></div>
+</div>
+
+<section class="pick" id="coverage">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2>Pick your country</h2>
+      <p class="muted">Serbia is where we operate. Everywhere else on this list is a market we are measuring rather than one we are pretending to cover.</p>
+    </div>
+    <div class="grid-c"><a class="cc" href="/serbia/"><span class="n">Serbia <span class="tag tag-live">Our market</span></span><span class="s">Belgrade · Novi Sad · Vojvodina</span></a><a class="cc" href="/montenegro/"><span class="n">Montenegro <span class="tag">Soon</span></span><span class="s">Podgorica · Budva · Bar · Nikšić</span></a><a class="cc" href="/bosnia-and-herzegovina/"><span class="n">Bosnia and Herzegovina <span class="tag">Soon</span></span><span class="s">Sarajevo · Banja Luka · Mostar · Tuzla</span></a><a class="cc" href="/north-macedonia/"><span class="n">North Macedonia <span class="tag">Soon</span></span><span class="s">Skopje · Bitola · Kumanovo</span></a><a class="cc" href="/croatia/"><span class="n">Croatia <span class="tag">Soon</span></span><span class="s">Zagreb · Split · Rijeka · Osijek</span></a><a class="cc" href="mailto:hello@blokvolt.com?subject=BlokVolt%20—%20another%20market"><span class="n">Somewhere else</span><span class="s">Tell us where — hello@blokvolt.com</span></a></div>
+  </div>
+</section>
+
+<section class="night" id="service">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow"><span class="dot"></span>What we actually sell</span>
+      <h2 style="margin-top:14px">Ten companies sell chargers. Nobody was selling the rest.</h2>
+      <p class="muted">Hardware is the easy part of home charging in a building. The hard part is shared electricity, a building assembly that has to say yes, and support after the invoice is paid. BlokVolt is built around those three.</p>
+    </div>
+    <div class="grid3">
+      <div class="card">
+        <span class="num">01</span>
+        <h3>Metering, not reselling</h3>
+        <p class="muted">A certified MID sub-meter records consumption; the resident is billed at the price on the utility's own invoice, without a markup. That distinction is what keeps the model clean — an electricity trading licence is for people who sell energy, and we do not.</p>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <h3>The building assembly package</h3>
+        <p class="muted">Notice, agenda wording, the technical annex and the installation certificate, prepared before the meeting. Most refusals happen because nobody could answer a neighbour's question about the shared bill — so we answer it in writing, in advance.</p>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <h3>A subscription that has a job</h3>
+        <p class="muted">A monthly statement you can show your neighbours, alerts when something behaves oddly, service within 48 hours, a winter check, an extended warranty and a free relocation if you move. Optional, cancellable, no lock-in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <h2>Why Serbia first</h2>
+      <p class="muted">A small fleet growing fast, a housing stock dominated by apartment buildings, and a purchase subsidy that keeps pulling new drivers in. All figures below are official Serbian sources, as of spring 2026.</p>
+    </div>
+    <div class="stats" style="filter:none">
+      <div class="st"><b>7,155</b><span>battery electric cars registered in Serbia, April 2026 (Ministry of the Interior, via RTS)</span></div>
+      <div class="st"><b>+221%</b><span>year-on-year growth in EV registrations, first quarter of 2026</span></div>
+      <div class="st"><b>~40,000</b><span>electric vehicles targeted by 2030 in the national energy and climate plan</span></div>
+      <div class="st"><b>€5,000</b><span>state subsidy per battery electric car, budgeted again for 2026</span></div>
+    </div>
+    <p class="muted" style="margin-top:20px;font-size:14.5px">Roughly 40–50% of those drivers park somewhere without a socket of their own — a garage, a box, an assigned space in a shared building. That is the addressable market, and it is the one nobody is serving properly.</p>
+  </div>
+</section>
+
+<section class="night">
+  <div class="wrap">
+    <div class="band">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>Hardware partners</span>
+        <h2 style="margin-top:12px">We are choosing wallbox suppliers for the Balkans.</h2>
+        <p class="muted" style="margin-top:14px;max-width:52ch">If you manufacture, import or distribute AC charging hardware, there is a page with our technical requirements and what we need in a quotation.</p>
+      </div>
+      <a class="btn btn-a btn-lg" href="/partners/">Requirements &amp; contact →</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fcol" style="max-width:34ch">
+        <span class="fb" style="font-size:24px;letter-spacing:-.02em"><i style="font-weight:300;font-style:normal">blok</i><b style="font-weight:800">volt</b></span>
+        <p class="muted" style="margin-top:12px;font-size:15px">Home EV charging for apartment-building residents. Metering, paperwork and service — not just hardware.</p>
+      </div>
+      <div class="fcol">
+        <h4>Coverage</h4>
+        <a href="/serbia/">Serbia</a>
+        <a href="/montenegro/">Montenegro</a>
+        <a href="/bosnia-and-herzegovina/">Bosnia and Herzegovina</a>
+        <a href="/north-macedonia/">North Macedonia</a>
+        <a href="/croatia/">Croatia</a>
+      </div>
+      <div class="fcol">
+        <h4>Business</h4>
+        <a href="/partners/">Manufacturers &amp; distributors</a>
+        <a href="https://www.blokvolt.rs" rel="noopener">Serbian site — blokvolt.rs</a>
+        <a href="mailto:hello@blokvolt.com">hello@blokvolt.com</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 BlokVolt · Novi Sad · Belgrade · Serbia</span>
+      <span>Serbia is our operating market. Other markets — in preparation.</span>
+    </div>
+  </div>
+</footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "BlokVolt", "url": "https://blokvolt.com", "email": "hello@blokvolt.com", "description": "Home EV charging as a service for apartment-building residents: charging line or 11 kW wallbox, certified MID sub-meter, building paperwork, billing and subscription support.", "areaServed": [{"@type": "Country", "name": "Serbia"}], "address": {"@type": "PostalAddress", "addressCountry": "RS", "addressLocality": "Novi Sad"}, "sameAs": ["https://www.blokvolt.rs"]}</script>
+</body>
+</html>
